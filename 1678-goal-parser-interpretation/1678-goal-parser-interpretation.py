@@ -12,6 +12,4 @@ class Solution:
             k+='G'
         return k
                 
-            
-        return s.replace("(al)","al").replace("()","o")
         
