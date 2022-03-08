@@ -12,9 +12,7 @@ struct ListNode *temp2=head;
     {  temp2=temp2->next->next;
          temp1=temp1->next;
      if(temp2==temp1)
-     {
          return true;
-     }
     }
     return false;
     
