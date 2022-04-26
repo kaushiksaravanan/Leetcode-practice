@@ -4,7 +4,6 @@ class Solution:
         for i in range(1,n+1):
             if n%i==0:
                 ke.append(i)
-        print(ke)
         if len(ke)>k-1:
             return ke[k-1]
         else:
