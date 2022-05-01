@@ -12,17 +12,10 @@ class Solution:
                 s2.pop()
             else:
                 s2.append(i)
-        # print(s1,s2)
-        try:
+        if s1.count('#')>0:
             s1.remove('#')
-        except:
-            pass
-        try:
+        if s2.count('#')>0:
             s2.remove('#')
-        except:
-            pass
-        print(s1,s2)
-
         return s1==s2
                 
         
