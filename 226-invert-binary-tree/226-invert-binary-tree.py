@@ -9,8 +9,6 @@ def ino(root):
         ino(root.right)
         ino(root.left)
         root.left,root.right=root.right,root.left
-    else:
-        return None
 class Solution:
     def invertTree(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
         ino(root)
