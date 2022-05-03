@@ -6,8 +6,8 @@
 #         self.right = right
 def ino(root):
     if root:
-        root.right=ino(root.right)
-        root.left=ino(root.left)
+        ino(root.right)
+        ino(root.left)
         root.left,root.right=root.right,root.left
         return root
     else:
