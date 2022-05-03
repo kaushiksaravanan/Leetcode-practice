@@ -11,19 +11,11 @@ class Solution:
                 for j in i:
                     z+=int(j)
                 ke.append(str(z))
-            print(ke)
-            # del m
             s=''.join(ke)
-            # print(s,m)
             del m
             m=ke
-            print(s,m)
-            # m=k
             if len(s)<=k:
                 break
-            # print(ke,m,s)
-            # m.clear()
-            # printm)
         return s
 
             
