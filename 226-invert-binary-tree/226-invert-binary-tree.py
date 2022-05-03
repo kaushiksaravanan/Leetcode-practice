@@ -9,7 +9,7 @@ def ino(root):
         ino(root.right)
         ino(root.left)
         root.left,root.right=root.right,root.left
-        return root
+        # return root
     else:
         return None
 class Solution:
