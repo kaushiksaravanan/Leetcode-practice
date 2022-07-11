@@ -7,8 +7,6 @@ class Solution:
         s=[]
         for i in range(N):
             s.append(0)
-        ##Your code here
-        # print(s)
         s[0]=arr[0]
         for i in range(1,len(arr)):
             k=max(arr[i],arr[i]+s[i-1])
