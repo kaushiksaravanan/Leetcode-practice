@@ -14,7 +14,7 @@ class Solution:
                     elif i==-1:
                         ss+=s[l]
                     l+=1
-                x.append(ss[:])
+                x.append(ss)
                 return
             if not s[index].isdigit():
                 flag[index]=1
