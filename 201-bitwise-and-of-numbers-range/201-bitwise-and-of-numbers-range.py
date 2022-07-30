@@ -1,4 +1,5 @@
 class Solution:
+    @lru_cache(None)
     def rangeBitwiseAnd(self, l: int, r: int) -> int:
         c=0
         while l!=r:   
