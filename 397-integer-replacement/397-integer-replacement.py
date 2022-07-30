@@ -1,14 +1,19 @@
+d={}
 class Solution:
     def integerReplacement(self, n: int) -> int:
         def f(n):
             if n==1:
                 return 0
+            if n in d:
+                return d[n]
             if n%2==0:
-                return 1+f(n//2)
+                d[n]=1+f(n//2)
+                return d[n]
             else:
                 n1=1+f(n-1)
                 n2=1+f(n+1)
-                return min(n1,n2)
+                d[n]=min(n1,n2)
+                return d[n]
         return f(n)
         
         '''Given a positive integer n, you can apply one of the following operations:
