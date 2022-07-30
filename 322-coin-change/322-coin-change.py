@@ -5,7 +5,7 @@ class Solution:
         # d = [[9999 for i in range(amount+1000) for j in range(amount+1000)]]
         n=len(coins)
         # d = [[999999 for i in range(index+1)] for j in range(amount+1)]
-        # @lru_cache(None)
+        @lru_cache(None)
         def f(index,amount):
 
             if index==0:
