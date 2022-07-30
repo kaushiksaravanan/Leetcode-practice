@@ -1,8 +1,8 @@
 class Solution:
     def letterCasePermutation(self, s: str) -> List[str]:
         x=[]
-        flag=[-2]*len(s)
-        def f(index):
+        # fl=[-2]*len(s)
+        def f(index,flag,x):
             if index>=len(s):
                 l=0
                 ss=''
@@ -18,11 +18,11 @@ class Solution:
                 return
             if not s[index].isdigit():
                 flag[index]=1
-                f(index+1)
+                f(index+1,flag,x)
                 flag[index]=0
-                f(index+1)
+                f(index+1,flag,x)
             else:
                 flag[index]=-1
-                f(index+1)
-        f(0)
+                f(index+1,flag,x)
+        f(0,[-2]*len(s),x)
         return x
