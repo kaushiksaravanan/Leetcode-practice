@@ -1,6 +1,7 @@
 class Solution:
     def jump(self, nums: List[int]) -> int:
         d={}
+        @lru_cache(None)
         def f(index):
             if index>=len(nums)-1:
                 return 0
