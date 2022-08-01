@@ -1,7 +1,9 @@
-import math
+# d={}
 class Solution:
     def uniquePaths(self, m: int, n: int) -> int:
+        # d.clear()
         d={}
+        @lru_cache(None)
         def f(r,c):
             if c==n-1 or r==m-1:
                 return 1
