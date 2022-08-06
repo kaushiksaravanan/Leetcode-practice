@@ -1,4 +1,5 @@
 class Solution:
+    @lru_cache(None)
     def longestCommonSubsequence(self, text1: str, text2: str) -> int:
         l1=len(text1)-1
         l2=len(text2)-1
