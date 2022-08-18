@@ -14,7 +14,7 @@ class Solution:
             if d[i]<=n:
                 n=n-d[i]
                 c+=1
-        return c
+        # return c
             
             
         
