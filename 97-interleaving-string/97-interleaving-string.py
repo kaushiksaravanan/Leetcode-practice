@@ -2,7 +2,7 @@ class Solution:
     def isInterleave(self, s1: str, s2: str, s3: str) -> bool:
         if len(s3)!=len(s1)+len(s2):
             return False
-        @lru_cache(None)
+        @cache
         def recur(i,j):
             if i==len(s1) and j==len(s2):
                 return True
