@@ -6,10 +6,9 @@ class Solution:
                 d[i]+=1
             if i not in d:
                 d[i]=1
-        k=list(sorted(d,key=lambda x:d[x]))
         n=len(arr)//2
         c=1
-        for i in k[::-1]:
+        for i in list(sorted(d,key=lambda x:d[x]))[::-1]:
             if d[i]>=n:
                 return c
             if d[i]<=n:
