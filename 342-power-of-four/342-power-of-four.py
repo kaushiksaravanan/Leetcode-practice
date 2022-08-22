@@ -3,8 +3,6 @@ class Solution:
         l=0
         if n<=0:
             return False
-        if n==4:
-            return True
         while n>1:
             print(n,n%4)
             k=n%4
