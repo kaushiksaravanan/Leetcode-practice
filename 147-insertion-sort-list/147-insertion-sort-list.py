@@ -10,14 +10,7 @@ class Solution:
         while c:
             arr.append(c.val)
             c=c.next
-        for i in range(1, len(arr)):
-            key=arr[i]
-            j=i-1
-            while j>=0 and key<arr[j] :
-                    arr[j+1]=arr[j]
-                    j-=1
-            arr[j+1]=key
-        print(arr)
+        arr.sort()
         c=head
         i=0
         while c:
