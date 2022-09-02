@@ -4,13 +4,12 @@ class Solution:
         pre=[0]
         for i in travel:
                 pre.append(pre[-1]+i)
-        i=0
         n1_last=0
         n2_last=0
         n3_last=0
-        for garb in garbage:
+        for i in range(len(garbage)):
             n1=n2=n3=0
-            for lett in garb:
+            for lett in garbage[i]:
                 if lett=='G':
                     n1+=1
                 elif lett=='P':
@@ -24,6 +23,5 @@ class Solution:
             if n3!=0:
                 n3_last=i
             cost=n1+n2+n3+cost
-            i+=1
         return cost+pre[n1_last]+pre[n2_last]+pre[n3_last]
         
