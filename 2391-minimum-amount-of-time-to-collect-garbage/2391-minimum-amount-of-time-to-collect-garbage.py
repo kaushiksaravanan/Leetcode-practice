@@ -10,30 +10,44 @@ class Solution:
         for i in travel:
                 pre.append(pre[-1]+i)
         
-        for let in ['G','P','M']:
-            xx=0
-            last=0
-            for i in garbage:
-                n1=i.count(let)
-                if n1!=0:
-                    last=xx
-                    cost+=n1
-                xx+=1
+        # for let in ['G','P','M']:
+        #     xx=0
+        #     last=0
+        #     for i in garbage:
+        #         n1=i.count(let)
+        #         if n1!=0:
+        #             last=xx
+        #             cost+=n1
+        #         xx+=1
             # print(xx)
             # if last==len(pre):
                 # cost+=pre[last-1]
             # else:
-            cost+=pre[last]
+            # cost+=pre[last]
             # if l!=-1:
             # l+=1
-        print(pre)
-        # for garb in garbage:
-        #     # travel[l]
-        #     n1=garb.count('G')
-        #     n2=garb.count('P')
-        #     n3=len(garb)-n1-n2
-        #     print(n1,n2,n3,garb,cost)
-        #     cost+=(n1+n2+n3)
+        # print(pre)
+        i=0
+        n1_last=0
+        n2_last=0
+        n3_last=0
+        for garb in garbage:
+            # travel[l]
+            n1=garb.count('G')
+            n2=garb.count('P')
+            n3=len(garb)-n1-n2
+            if n1!=0:
+                n1_last=i
+            if n2!=0:
+                n2_last=i
+            if n3!=0:
+                n3_last=i
+            
+            # print(n1,n2,n3,garb,cost)
+            cost+=(n1+n2+n3)
+            i+=1
+        print(cost)
+        return cost+pre[n1_last]+pre[n2_last]+pre[n3_last]
         #     if l!=-1:
         #         cost+=travel[l]*(n1+n2+n3)
         #     l+=1
@@ -47,5 +61,6 @@ class Solution:
             #     l+=1
             #     # garb=garb.replace(i,'')
         # print(garbage)
+        # for 
         return cost
         
