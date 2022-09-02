@@ -9,10 +9,14 @@ class Solution:
         n2_last=0
         n3_last=0
         for garb in garbage:
-            # travel[l]
-            n1=garb.count('G')
-            n2=garb.count('P')
-            n3=len(garb)-n1-n2
+            n1=n2=n3=0
+            for lett in garb:
+                if lett=='G':
+                    n1+=1
+                elif lett=='P':
+                    n2+=1
+                else:
+                    n3+=1
             if n1!=0:
                 n1_last=i
             if n2!=0:
