@@ -1,9 +1,9 @@
 class Solution:
     def garbageCollection(self, garbage: List[str], travel: List[int]) -> int:
         cost=0
-        pre=[0]
-        for i in travel:
-                pre.append(pre[-1]+i)
+        pre=[0]*(len(travel)+1)
+        for i in range(len(travel)):
+            pre[i+1]=travel[i]+pre[i]
         n1_last=0
         n2_last=0
         n3_last=0
