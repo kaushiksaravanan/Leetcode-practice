@@ -8,7 +8,9 @@ class Solution:
         n2_last=0
         n3_last=0
         for i in range(len(garbage)):
-            n1=n2=n3=0
+            n1=0
+            n2=0
+            n3=0
             for lett in garbage[i]:
                 if lett=='G':
                     n1+=1
@@ -22,6 +24,6 @@ class Solution:
                 n2_last=i
             if n3!=0:
                 n3_last=i
-            cost=n1+n2+n3+cost
+            cost+=n1+n2+n3
         return cost+pre[n1_last]+pre[n2_last]+pre[n3_last]
         
