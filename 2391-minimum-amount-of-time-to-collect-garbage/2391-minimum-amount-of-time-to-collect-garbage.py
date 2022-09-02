@@ -24,6 +24,6 @@ class Solution:
                 n2_last=i
             if n3!=0:
                 n3_last=i
-            cost+=n1+n2+n3
+            cost=n1+n2+n3+cost
         return cost+pre[n1_last]+pre[n2_last]+pre[n3_last]
         
