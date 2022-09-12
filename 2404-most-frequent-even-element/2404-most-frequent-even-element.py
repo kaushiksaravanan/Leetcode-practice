@@ -12,8 +12,10 @@ class Solution:
         if len(k)==0:
             return -1
         key=k[-1]
-        val=999999999999999
+        val=99999999
         for i in k:
             if d[i]==d[key]:
                 val=min(i,val)
+            if d[i]>d[key]:
+                break
         return val
