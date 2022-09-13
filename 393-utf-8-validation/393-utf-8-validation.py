@@ -7,11 +7,9 @@ class Solution:
             m=(8-temp_n1)*'0'+n1
             k.append(m)
         def check_1(m,ind):
-            # print(m,ind,m[ind])
             return m[ind][0]=='0'
         def check_2(m,ind):
             s1=m[ind][:3]=='110'
-            # print(m[ind][:4])
             if len(m)<=ind+1:
                 return False
             s2=m[ind+1][:2]=='10'
@@ -19,7 +17,6 @@ class Solution:
         def check_3(m,ind):
             s1=m[ind][:4]=='1110'
             if len(m)<=ind+1 or len(m)<=ind+2:
-                print('thiis',ind)
                 return False
             s2=m[ind+1][:2]=='10'
             s3=m[ind+2][:2]=='10'
