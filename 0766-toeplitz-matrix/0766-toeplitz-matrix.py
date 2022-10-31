@@ -9,6 +9,7 @@ class Solution:
                     for ii in range(n+1000):
                         try:
                             if matrix[i][j]!=matrix[i+ii][j+ii]:
+                                d[matrix[i+ii][j+ii]]=1
                                 return False
                         except:
                             break
