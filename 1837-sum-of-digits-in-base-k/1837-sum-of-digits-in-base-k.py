@@ -4,6 +4,6 @@ class Solution:
         y=0
         while n>0:
             s+=n%k
-            n=int(n/k)
+            n//=k
         return s
         
