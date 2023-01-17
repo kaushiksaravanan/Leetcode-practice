@@ -3,7 +3,7 @@ class Solution:
         dig=0
         ele=0
         for i in nums:
-            for k in list(str(i)):
+            for k in str(i):
                 dig+=int(k)
             ele+=i
         return abs(ele-dig)
