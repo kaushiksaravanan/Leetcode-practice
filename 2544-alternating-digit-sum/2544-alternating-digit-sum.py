@@ -4,7 +4,6 @@ class Solution:
         while n>0:
             val.append(n%10)
             n=n//10
-        print(val)
         s=0
         k=1
         for i in val[::-1]:
