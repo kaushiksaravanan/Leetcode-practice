@@ -12,7 +12,6 @@ class Solution {
         for(int i=d.size()-1;i>0;i--)
         {
             s=s+k*d.get(i);
-            System.out.println(d.get(i));
             k=k*-1;
         }
         return s;
