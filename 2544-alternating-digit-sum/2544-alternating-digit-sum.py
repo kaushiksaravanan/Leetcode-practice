@@ -4,6 +4,6 @@ class Solution:
         k=1
         for i in str(n):
             s+=int(i)*k
-            k=k*-1
+            k*=-1
         return s
         
