@@ -6,22 +6,24 @@ class Solution:
         for i in range(len(profits)):
             ke.append([profits[i],capital[i]])
         ke.sort(key=lambda x:-x[0])
-        curr_capital=w
+        # curr_capital=w
+        n=len(ke)
         while True:
             flag=0
             if k==0 or len(ke)==0:
                 break
-            for i in range(len(ke)):
-                if k==0 or len(ke)==0:
+            for i in range(n):
+                if k==0:
                     flag=1
                     break
-                if ke[i][1]<=curr_capital:
-                    curr_capital+=ke[i][0]
+                if ke[i][1]<=w:
+                    w+=ke[i][0]
                     ke.pop(i)
                     k-=1
+                    n-=1
                     break
-                if len(ke)-1==i:
+                if n-1==i:
                     flag=1
             if flag==1:
                 break
-        return curr_capital
+        return w
