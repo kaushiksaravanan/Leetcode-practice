@@ -11,7 +11,6 @@ class Solution:
         d_ch={}
         for i in descriptions:
             d[tuple(i)]=d.get(tuple(i),0)
-        for i in descriptions:
             d_he[i[0]]=d_he.get(i[0],0)
             d_ch[i[1]]=d_he.get(i[1],0)
 
