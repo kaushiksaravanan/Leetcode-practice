@@ -1,9 +1,16 @@
-class Solution(object):
-    def findDifference(self, nums1, nums2):
-        """
-        :type nums1: List[int]
-        :type nums2: List[int]
-        :rtype: List[List[int]]
-        """
-        return [list(set(nums1).difference(set(nums2))),list(set(nums2).difference(set(nums1)))]
+class Solution:
+    def findDifference(self, nums1: List[int], nums2: List[int]) -> List[List[int]]:
+        d1=Counter(nums1)
+        d2=Counter(nums2)
+        a=[]
+        b=[]
+        for i in d1:
+            if i not in d2:
+                a.append(i)
+        for i in d2:
+            if i not in d1:
+                b.append(i)
+        return [a,b]
+        
+                
         
