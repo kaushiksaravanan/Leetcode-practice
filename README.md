@@ -7,12 +7,3 @@
 - [![wakatime](https://wakatime.com/badge/user/76b68047-0e7a-49a1-ac11-f631a2b45e33/project/610316ad-1ee1-4251-8757-1c8b41533750.svg)](https://wakatime.com/badge/user/76b68047-0e7a-49a1-ac11-f631a2b45e33/project/610316ad-1ee1-4251-8757-1c8b41533750)
 - [![wakatime](https://wakatime.com/badge/user/76b68047-0e7a-49a1-ac11-f631a2b45e33/project/3f4b5897-844d-4f82-8648-4bca113fad04.svg)](https://wakatime.com/badge/user/76b68047-0e7a-49a1-ac11-f631a2b45e33/project/3f4b5897-844d-4f82-8648-4bca113fad04)
 
-
-Collection of LeetCode questions which I solved
-
-![Leetcode Stats](https://leetcode.card.workers.dev/Kauhsik_S?theme=wtf&font=baloo&extension=activity)
-![Leetcode Stats](https://leetcode.card.workers.dev/Kauhsik_S?theme=nord&font=baloo&extension=activity)
-![Leetcode Stats](https://leetcode.card.workers.dev/Kauhsik_S?theme=nord&font=source_code_pro&extension=null)
-![Leetcode Stats](https://leetcode.card.workers.dev/Kauhsik_S?theme=dark&font=baloo&extension=null)
-![Leetcode Stats](https://leetcode.card.workers.dev/?username=Kauhsik_S&theme=nord)
-![Leetcode Stats](https://leetcode.card.workers.dev/Kauhsik_S?theme=wtf)
