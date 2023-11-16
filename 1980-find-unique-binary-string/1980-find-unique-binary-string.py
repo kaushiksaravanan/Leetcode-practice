@@ -1,14 +1,10 @@
 class Solution:
     def findDifferentBinaryString(self, nums: List[str]) -> str:
-        rr=len(nums[0])
+        rr=len(nums)
         d=[None]*2**rr
-        ma=2**rr
-        r=2**(rr-1)
         for i in nums:
             d[int(i,2)]=1
-        if r==1:
-            r-=1
-        for i in range(ma):
+        for i in range(2**rr):
             if d[i]==None:
                 if i==0:
                     return "0"*rr
